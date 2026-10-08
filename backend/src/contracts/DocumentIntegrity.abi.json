@@ -1,0 +1,23 @@
+[
+  {
+    "type": "function",
+    "name": "storeDocumentHash",
+    "stateMutability": "nonpayable",
+    "inputs": [
+      { "name": "documentId", "type": "string" },
+      { "name": "sha256Hash", "type": "bytes32" }
+    ],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "getDocumentHash",
+    "stateMutability": "view",
+    "inputs": [{ "name": "documentId", "type": "string" }],
+    "outputs": [
+      { "name": "sha256Hash", "type": "bytes32" },
+      { "name": "timestamp", "type": "uint256" },
+      { "name": "submitter", "type": "address" }
+    ]
+  }
+]
